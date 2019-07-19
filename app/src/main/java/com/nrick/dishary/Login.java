@@ -111,6 +111,10 @@ public class Login extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
+        SharedPreferences.Editor editor = getSharedPreferences("point", MODE_PRIVATE).edit();
+        editor.putInt("point", 0);
+        editor.apply();
+
         SharedPreferences prefs = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE);
         String userId = prefs.getString("id", null);
         if (userId != null) {

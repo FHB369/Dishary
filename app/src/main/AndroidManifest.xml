@@ -3,6 +3,7 @@
     package="com.nrick.dishary">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -10,8 +11,56 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Design.NoActionBar">
-        <activity android:name=".CourseList"></activity>
+        android:theme="@style/AppTheme">
+        <activity android:name=".Congrats"></activity>
+        <activity
+            android:name=".Quiz2"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".Quiz1"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".Slider6"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".Slider5"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".Slider4"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".Slider3"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".Slider2"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity
+            android:name=".Slider1"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.FullScreen" />
+        <activity android:name=".BPSuggestion" />
+        <activity
+            android:name=".AnyOrientationCaptureActivity"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".QRScan" />
+        <activity android:name=".Profile" />
+        <activity android:name=".EnrolledCourseSlide" />
+        <activity android:name=".CourseSlide" />
+        <activity
+            android:name=".AllCourse"
+            android:label="@string/title_activity_all_course"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".CourseList" />
         <activity android:name=".Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,7 +68,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
             </intent-filter>

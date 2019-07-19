@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnrolledCourseSlide">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingHorizontal="20dp">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="গর্ভবতী মায়ের স্বাস্থ্য"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="@font/fedra_sans_medium"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="পাঠটির কিছু গুরুত্বপুর্ন তথ্য"
+            android:textAlignment="center"
+            android:textSize="14sp"
+            android:fontFamily="@font/fedra_sans_medium"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="@font/fedra"
+            android:text="রান্নার সময় অবশ্যই আয়োডিনযুক্ত লবন খেতে হবে" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="@font/fedra"
+            android:text="ডাক্তারের পরামর্শ অনুযায়ী আয়রন ফলিক ট্যাবলেট খেতে হবে" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="@font/fedra"
+            android:text="ভারী কাজ থেকে বিরত থাকতে হবে" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="@font/fedra"
+            android:text="গর্ভকালীন ৫ টি বিপদ সংকেতের উপর অবশ্যই খেয়াল রাখতে হবে" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginVertical="20dp"
+            android:fontFamily="@font/fedra"
+            android:text="গর্ভাবস্থায় অন্তত ৪ বার মায়ের ওজন, রক্তচাপ ও গর্ভের শিশুর অবস্থান ডাক্তারের কাছে পরীক্ষা করতে হবে" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

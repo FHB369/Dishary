@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QRScan">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="রোগীর তথ্য"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:layout_marginVertical="10dp"
+                android:fontFamily="@font/fedra_sans_medium"
+                android:textColor="@color/colorPrimaryDark"
+                />
+
+            <TextView
+                android:id="@+id/textStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/fedra_sans_medium"
+                android:layout_marginVertical="5dp"
+                android:text="লোড করা হচ্ছে..." />
+
+            <EditText
+                android:id="@+id/textName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:fontFamily="@font/fedra_sans_medium"
+                android:hint="রোগীর নাম"
+                android:layout_marginVertical="5dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/fedra_sans_medium"
+                android:text="রোগীর নাম: "
+                android:layout_marginVertical="5dp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/textPopulation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="পরিবারের লোক সংখ্যা"
+                android:fontFamily="@font/fedra_sans_medium"
+                android:visibility="gone"
+                android:layout_marginVertical="5dp"
+                />
+
+            <TextView
+                android:id="@+id/Population"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/fedra_sans_medium"
+                android:text="পরিবারের লোক সংখ্যা: "
+                android:layout_marginVertical="5dp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/textMale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="পুরুষের সংখ্যা"
+                android:fontFamily="@font/fedra_sans_medium"
+                android:visibility="gone"
+                android:layout_marginVertical="5dp"
+                />
+
+            <TextView
+                android:id="@+id/Male"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/fedra_sans_medium"
+                android:text="পুরূষের সংখ্যা: "
+                android:layout_marginVertical="5dp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/textFemale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="নারীর সংখ্যা"
+                android:fontFamily="@font/fedra_sans_medium"
+                android:visibility="gone"
+                android:layout_marginVertical="5dp"
+                />
+
+            <TextView
+                android:id="@+id/Female"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/fedra_sans_medium"
+                android:text="নারীর সংখ্যা: "
+                android:layout_marginVertical="5dp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/textLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="এলাকা"
+                android:fontFamily="@font/fedra_sans_medium"
+                android:visibility="gone"
+                android:layout_marginVertical="5dp"
+                />
+
+            <TextView
+                android:id="@+id/Location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/fedra_sans_medium"
+                android:text="এলাকা: "
+                android:layout_marginVertical="5dp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/textDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:hint="সন্তান জন্মদানের তারিখ"
+                android:fontFamily="@font/fedra_sans_medium"
+                android:visibility="gone"
+                android:layout_marginVertical="5dp"
+                />
+
+            <TextView
+                android:id="@+id/Date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:fontFamily="@font/fedra_sans_medium"
+                android:text="সন্তান জন্মের তারিখ: "
+                android:layout_marginVertical="5dp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/textBP1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="১ম সপ্তাহে রক্তচাপ"
+                android:fontFamily="@font/fedra_sans_medium"
+                android:visibility="gone"
+                android:layout_marginVertical="5dp"
+                />
+
+            <EditText
+                android:id="@+id/textBP2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="২য় সপ্তাহে রক্তচাপ"
+                android:fontFamily="@font/fedra_sans_medium"
+                android:visibility="gone"
+                android:layout_marginVertical="5dp"
+                />
+
+            <EditText
+                android:id="@+id/textBP3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="number"
+                android:hint="৩য় সপ্তাহে রক্তচাপ"
+                android:fontFamily="@font/fedra_sans_medium"
+                android:visibility="gone"
+                android:layout_marginVertical="5dp"
+                />
+
+            <Button
+                android:id="@+id/submitBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:text="তথ্য আপডেট করুন"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:fontFamily="@font/fedra"
+                android:visibility="gone"
+                android:layout_marginVertical="5dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

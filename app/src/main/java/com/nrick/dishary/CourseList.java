@@ -21,15 +21,15 @@ public class CourseList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_course_list);
 
-        recyclerView = (RecyclerView) findViewById(R.id.recycler);
-
-        mAdapter = new CourseAdapter(movieList);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
-        recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(mAdapter);
-
-        prepareMovieData();
+//        recyclerView = (RecyclerView) findViewById(R.id.recycler);
+//
+//        mAdapter = new CourseAdapter(movieList);
+//        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
+//        recyclerView.setLayoutManager(mLayoutManager);
+//        recyclerView.setItemAnimator(new DefaultItemAnimator());
+//        recyclerView.setAdapter(mAdapter);
+//
+//        prepareMovieData();
     }
 
     private void prepareMovieData() {
